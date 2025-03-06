@@ -1,7 +1,7 @@
 {
-  "name": "promise-trace-ponyfill",
+  "name": "promise-trace",
   "version": "1.0.0",
-  "description": "A ponyfill for tracing and monitoring Promise rejections with labels",
+  "description": "A utility for tracing and monitoring Promise rejections with labels",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
