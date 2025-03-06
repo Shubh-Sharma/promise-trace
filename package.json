@@ -2,38 +2,35 @@
   "name": "promise-track",
   "version": "1.0.3",
   "description": "A utility for tracing and monitoring Promise rejections with labels",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
+    "types": "./dist/index.d.ts",
     "import": "./dist/index.mjs",
-    "require": "./dist/index.js",
-    "types": "./dist/index.d.ts"
+    "require": "./dist/index.cjs"
   },
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
-    "test": "NODE_ENV=development ts-node test.ts",
+    "build": "npm run clean && tsc && esbuild src/index.ts --format=cjs --outfile=dist/index.cjs && esbuild src/index.ts --format=esm --outfile=dist/index.mjs",
+    "test": "NODE_ENV=development tsx test.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier --write 'src/**/*.ts' 'test.ts'",
     "release": "npm run clean && npm run build && npm publish --access public"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "ts-node": "^10.0.0",
-    "eslint": "^8.0.0",
-    "prettier": "^3.0.0",
+    "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@types/node": "^18.0.0"
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.0.0"
   },
-  "dependencies": {},
   "keywords": [
     "promise",
     "trace",

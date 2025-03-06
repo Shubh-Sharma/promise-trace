@@ -1,10 +1,5 @@
 // Import from `src` during development, and from `dist` in production
-const { withTrace, traceAllSettled } =
-  process.env.NODE_ENV === "development"
-    ? require("./src/index")
-    : require("./dist/index");
-
-
+import { withTrace, traceAllSettled } from './dist';
 
 // Sample Promises
 const p1 = Promise.resolve("Success 1");
