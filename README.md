@@ -5,13 +5,13 @@ A utility for tracing and monitoring Promise rejections with labels.
 ## Installation
 
 ```sh
-npm install promise-trace-ponyfill
+npm install promise-track
 ```
 
 or with Yarn:
 
 ```sh
-yarn add promise-trace-ponyfill
+yarn add promise-track
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add promise-trace-ponyfill
 ### Import the Functions
 
 ```ts
-import { trace, traceAllSettled } from "promise-trace-ponyfill";
+import { trace, traceAllSettled } from "promise-track";
 ```
 
 ### Example Usage

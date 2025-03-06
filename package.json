@@ -1,5 +1,5 @@
 {
-  "name": "promise-trace",
+  "name": "promise-track",
   "version": "1.0.0",
   "description": "A utility for tracing and monitoring Promise rejections with labels",
   "main": "dist/index.js",
