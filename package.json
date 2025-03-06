@@ -1,6 +1,6 @@
 {
   "name": "promise-track",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility for tracing and monitoring Promise rejections with labels",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,7 +25,13 @@
     "@types/node": "^18.0.0"
   },
   "dependencies": {},
-  "keywords": ["promise", "trace", "ponyfill", "async", "monitoring"],
+  "keywords": [
+    "promise",
+    "trace",
+    "ponyfill",
+    "async",
+    "monitoring"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
