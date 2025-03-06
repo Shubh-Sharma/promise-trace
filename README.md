@@ -1,4 +1,4 @@
-# Promise Trace Ponyfill
+# Promise Track
 
 A utility for tracing and monitoring Promise rejections with labels.
 
