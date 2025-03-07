@@ -4,17 +4,17 @@
     "rootDir": "src",
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": false,
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "module": "ESNext",
-    "target": "ESNext"
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDeclarationOnly": false, 
+    "noEmit": false // ✅ Ensure TypeScript emits JavaScript files
   },
-  "include": ["src"],
-  "exclude": ["test", "node_modules", "dist"],
-  "ts-node": {
-    "transpileOnly": true,
-    "loader": "ts-node/esm"
-  }
+  "include": ["src"]
 }

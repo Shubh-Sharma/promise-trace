@@ -2,24 +2,24 @@
   "name": "promise-track",
   "version": "1.0.10",
   "description": "A utility for tracing and monitoring Promise rejections with labels",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
     },
     "./withTrace": {
       "types": "./dist/withTrace.d.ts",
-      "import": "./dist/withTrace.js",
-      "require": "./dist/withTrace.js"
+      "import": "./dist/esm/withTrace.js",
+      "require": "./dist/cjs/withTrace.js"
     },
     "./traceAllSettled": {
       "types": "./dist/traceAllSettled.d.ts",
-      "import": "./dist/traceAllSettled.js",
-      "require": "./dist/traceAllSettled.js"
+      "import": "./dist/esm/traceAllSettled.js",
+      "require": "./dist/cjs/traceAllSettled.js"
     }
   },
   "files": [
@@ -28,7 +28,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && esbuild src/index.ts --format=cjs --outdir=dist && esbuild src/index.ts --format=esm --outdir=dist --splitting",
+    "build": "npm run clean && tsc && esbuild src/index.ts --format=cjs --outdir=dist/cjs && esbuild src/index.ts --format=esm --outdir=dist/esm --splitting",
     "test": "NODE_ENV=development tsx test.ts",
     "prepare": "npm run build && husky install",
     "prepublishOnly": "npm test",
