@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.7...v1.0.8) (2025-03-07)
+
+
+### Bug Fixes
+
+* Merge pull request [#7](https://github.com/Shubh-Sharma/promise-trace/issues/7) from Shubh-Sharma/fix/vscode-imports ([6f102c0](https://github.com/Shubh-Sharma/promise-trace/commit/6f102c0fa1ba724430e39d9409588cb8b7f1e363))
+* updated tsconfig and package json ([c017c01](https://github.com/Shubh-Sharma/promise-trace/commit/c017c018f9d21a66e82657d2bfde488b92277980))
+
 ## [1.0.7](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.6...v1.0.7) (2025-03-07)
 
 
