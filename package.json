@@ -10,13 +10,19 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
+    },
+    "./withTrace": {
+      "types": "./dist/withTrace.d.ts",
+      "import": "./dist/withTrace.js",
+      "require": "./dist/withTrace.js"
+    },
+    "./traceAllSettled": {
+      "types": "./dist/traceAllSettled.d.ts",
+      "import": "./dist/traceAllSettled.js",
+      "require": "./dist/traceAllSettled.js"
     }
   },
-  "files": [
-    "dist",
-    "index.js",
-    "index.d.ts"
-  ],
+  "files": ["dist/index.js", "dist/index.d.ts"],
   "scripts": {
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
