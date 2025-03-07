@@ -1,6 +1,6 @@
 {
   "name": "promise-track",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "A utility for tracing and monitoring Promise rejections with labels",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -22,7 +22,10 @@
       "require": "./dist/traceAllSettled.js"
     }
   },
-  "files": ["dist/index.js", "dist/index.d.ts"],
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
   "scripts": {
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
