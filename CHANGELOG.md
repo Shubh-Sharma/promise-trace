@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.8...v1.0.9) (2025-03-07)
+
+
+### Bug Fixes
+
+* refactored code to fix auto imports ([c626245](https://github.com/Shubh-Sharma/promise-trace/commit/c626245aca1f7a6f0371bad2f28423465225ff61))
+
 ## [1.0.8](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.7...v1.0.8) (2025-03-07)
 
 
