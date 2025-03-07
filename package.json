@@ -1,6 +1,6 @@
 {
   "name": "promise-track",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A utility for tracing and monitoring Promise rejections with labels",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
