@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.6...v1.0.7) (2025-03-07)
+
+
+### Bug Fixes
+
+* merge pull request [#4](https://github.com/Shubh-Sharma/promise-trace/issues/4) from Shubh-Sharma/feat/docs ([f5d84f0](https://github.com/Shubh-Sharma/promise-trace/commit/f5d84f0b8fdadabcb9716cbaec100796fbc0a672))
+* Merge pull request [#6](https://github.com/Shubh-Sharma/promise-trace/issues/6) from Shubh-Sharma/feat/docs ([02abfdb](https://github.com/Shubh-Sharma/promise-trace/commit/02abfdb544200aca70124c6a71e1b6b75ac5e8fd))
+* version conflicts resolved ([9c98e36](https://github.com/Shubh-Sharma/promise-trace/commit/9c98e369fed33b0cef62252a67d4823162d19c40))
+
 ## [1.0.5](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.4...v1.0.5) (2025-03-07)
 
 
