@@ -19,7 +19,7 @@ yarn add promise-track
 ### Import the Functions
 
 ```ts
-import { trace, traceAllSettled } from "promise-track";
+import { withTrace, traceAllSettled } from "promise-track";
 ```
 
 ### Example Usage
@@ -34,10 +34,10 @@ const p5 = Promise.reject("Error 3");
 // Wrap potentially failing promises with labels
 const tracedPromises = [
   p1,
-  trace("ID-1", p2),
+  withTrace("ID-1", p2),
   p3,
-  trace("ID-2", p4),
-  trace("ID-3", p5)
+  withTrace("ID-2", p4),
+  withTrace("ID-3", p5)
 ];
 
 // Call traceAllSettled with a custom logger
@@ -48,13 +48,13 @@ traceAllSettled(tracedPromises, console.warn).then(([resolved, rejected]) => {
 ```
 
 ### Behavior
-- The `trace` function wraps a promise with a **label**, making it easier to debug.
+- The `withTrace` function wraps a promise with a **label**, making it easier to debug.
 - The `traceAllSettled` function waits for all promises to settle and separates **fulfilled** and **rejected** promises.
 - In **development mode (`NODE_ENV=development`)**, it logs labeled failures automatically.
 
 ## API
 
-### `trace(label: string, promise: Promise<T>): { label: string, promise: Promise<T> }`
+### `withTrace(label: string, promise: Promise<T>): { label: string, promise: Promise<T> }`
 Wraps a promise with a label for easier debugging.
 
 ### `traceAllSettled(promises: (Promise<T> | { label: string, promise: Promise<T> })[], logFn?: (...args: any[]) => void): Promise<[T[], any[]]>`
