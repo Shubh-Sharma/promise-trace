@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.10...v1.0.11) (2025-03-07)
+
+
+### Bug Fixes
+
+* trigger release ([4e2e670](https://github.com/Shubh-Sharma/promise-trace/commit/4e2e670dfa2902c0688d36e9ba77f5f5eba1d9cf))
+
 ## [1.0.10](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.9...v1.0.10) (2025-03-07)
 
 
