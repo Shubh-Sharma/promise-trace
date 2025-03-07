@@ -12,14 +12,14 @@
       "require": "./dist/index.cjs"
     },
     "./withTrace": {
+      "types": "./dist/withTrace.d.ts",
       "import": "./dist/withTrace.js",
-      "require": "./dist/withTrace.js",
-      "types": "./dist/withTrace.d.ts"
+      "require": "./dist/withTrace.js"
     },
     "./traceAllSettled": {
+      "types": "./dist/traceAllSettled.d.ts",
       "import": "./dist/traceAllSettled.js",
-      "require": "./dist/traceAllSettled.js",
-      "types": "./dist/traceAllSettled.d.ts"
+      "require": "./dist/traceAllSettled.js"
     }
   },
   "files": ["dist/index.js", "dist/index.d.ts"],
