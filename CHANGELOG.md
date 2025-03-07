@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.9...v1.0.10) (2025-03-07)
+
+
+### Bug Fixes
+
+* split files build ([0c172f5](https://github.com/Shubh-Sharma/promise-trace/commit/0c172f52fa5fd2b505059e65ab97f2a05401f13d))
+
 ## [1.0.9](https://github.com/Shubh-Sharma/promise-trace/compare/v1.0.8...v1.0.9) (2025-03-07)
 
 
