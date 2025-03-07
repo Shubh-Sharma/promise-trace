@@ -23,13 +23,14 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc && esbuild src/index.ts --format=cjs --outfile=dist/index.cjs && esbuild src/index.ts --format=esm --outfile=dist/index.mjs",
     "test": "NODE_ENV=development tsx test.ts",
-    "prepare": "npm run build",
+    "prepare": "npm run build && husky install",
     "prepublishOnly": "npm test",
     "release": "npm run clean && npm run build && npm publish --access public"
   },
   "devDependencies": {
     "@types/node": "22.13.9",
     "esbuild": "0.25.0",
+    "husky": "^8.0.0",
     "tsx": "4.19.3",
     "typescript": "5.8.2"
   },
