@@ -12,7 +12,6 @@
       "require": "./dist/index.cjs"
     }
   },
-  "type": "module",
   "files": [
     "dist",
     "index.js",

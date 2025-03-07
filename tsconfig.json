@@ -3,6 +3,7 @@
     "outDir": "dist",
     "rootDir": "src",
     "declaration": true,
+    "declarationMap": true,
     "emitDeclarationOnly": false,
     "moduleResolution": "node",
     "esModuleInterop": true,
