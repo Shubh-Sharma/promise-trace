@@ -23,8 +23,7 @@
     }
   },
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts"
+    "dist"
   ],
   "scripts": {
     "dev": "tsc --watch",
