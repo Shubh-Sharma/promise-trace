@@ -30,6 +30,3 @@ pnpm-debug.log*
 
 # Ignore test coverage reports
 coverage/
-
-# Ignore package-lock.json if using yarn
-package-lock.json
