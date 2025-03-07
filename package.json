@@ -14,7 +14,9 @@
   },
   "type": "module",
   "files": [
-    "dist", "index.js", "index.d.ts"
+    "dist",
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "dev": "tsc --watch",
@@ -26,12 +28,10 @@
     "release": "npm run clean && npm run build && npm publish --access public"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "esbuild": "^0.25.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.0.0"
+    "@types/node": "22.13.9",
+    "esbuild": "0.25.0",
+    "tsx": "4.19.3",
+    "typescript": "5.8.2"
   },
   "keywords": [
     "promise",
